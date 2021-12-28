@@ -1,0 +1,23 @@
+{
+  "name": "@preflower/eslint-config-svelte",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "svelte": "*"
+  },
+  "dependencies": {
+    "@preflower/eslint-config-typescript": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "svelte": "^3.44.3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@preflower/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --config=index.js"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "@preflower/eslint-config-basic": "workspace:^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "^4.5.4"
+  }
+}

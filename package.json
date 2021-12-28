@@ -1,0 +1,30 @@
+{
+  "name": "@preflower/eslint-monorepo",
+  "version": "1.0.0",
+  "description": "A eslint plugin base on standard",
+  "license": "MIT",
+  "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "lint": "npx eslint --ext .js,.json,.vue --fix ."
+  },
+  "lint-staged": {
+    "*.{js,json,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@preflower/eslint-config": "workspace:^1.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4"
+  }
+}

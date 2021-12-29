@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",

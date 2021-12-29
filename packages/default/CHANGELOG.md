@@ -1,0 +1,13 @@
+# @preflower/eslint-config
+
+## 1.0.0
+### Major Changes
+
+- initial release
+
+### Patch Changes
+
+- Updated dependencies
+  - @preflower/eslint-config-react@1.0.0
+  - @preflower/eslint-config-svelte@1.0.0
+  - @preflower/eslint-config-vue@1.0.0

@@ -1,6 +1,6 @@
 {
   "name": "@preflower/eslint-monorepo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A eslint plugin base on standard",
   "license": "MIT",
   "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
@@ -21,9 +21,10 @@
     ]
   },
   "devDependencies": {
+    "@changesets/cli": "^2.19.0",
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
-    "@preflower/eslint-config": "workspace:^1.0.0",
+    "@preflower/eslint-config": "workspace:*",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.4"
   }

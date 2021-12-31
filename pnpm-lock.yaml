@@ -52,7 +52,7 @@ importers:
 
   packages/react:
     specifiers:
-      '@preflower/eslint-config-typescript': workspace:^1.0.0
+      '@preflower/eslint-config-typescript': workspace:^1.0.1
       eslint: ^8.5.0
       eslint-plugin-react: ^7.28.0
     dependencies:
@@ -63,7 +63,7 @@ importers:
 
   packages/svelte:
     specifiers:
-      '@preflower/eslint-config-typescript': workspace:^1.0.0
+      '@preflower/eslint-config-typescript': workspace:^1.0.1
       eslint: ^8.5.0
       eslint-plugin-svelte3: ^3.2.1
       svelte: ^3.44.3
@@ -76,7 +76,7 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@preflower/eslint-config-basic': workspace:^1.0.0
+      '@preflower/eslint-config-basic': workspace:^1.0.1
       '@typescript-eslint/eslint-plugin': ^5.8.1
       '@typescript-eslint/parser': ^5.8.1
       eslint: ^8.5.0
@@ -99,7 +99,7 @@ importers:
 
   packages/vue:
     specifiers:
-      '@preflower/eslint-config-typescript': workspace:^1.0.0
+      '@preflower/eslint-config-typescript': workspace:^1.0.1
       eslint: ^8.5.0
       eslint-plugin-vue: ^8.2.0
       vue-eslint-parser: ^8.0.1

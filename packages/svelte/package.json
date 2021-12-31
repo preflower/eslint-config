@@ -1,6 +1,6 @@
 {
   "name": "@preflower/eslint-config-svelte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "license": "MIT",
   "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
@@ -13,7 +13,7 @@
     "svelte": "*"
   },
   "dependencies": {
-    "@preflower/eslint-config-typescript": "workspace:^1.0.0",
+    "@preflower/eslint-config-typescript": "workspace:^1.0.1",
     "eslint-plugin-svelte3": "^3.2.1"
   },
   "devDependencies": {

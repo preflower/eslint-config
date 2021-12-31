@@ -12,11 +12,11 @@
     "eslint": "*"
   },
   "dependencies": {
-    "@preflower/eslint-config-typescript": "workspace:^1.0.0"
+    "@preflower/eslint-config-typescript": "workspace:^1.0.0",
+    "eslint-plugin-react": "^7.28.0"
   },
   "devDependencies": {
-    "eslint": "^8.5.0",
-    "eslint-plugin-react": "^7.28.0"
+    "eslint": "^8.5.0"
   },
   "publishConfig": {
     "access": "public"

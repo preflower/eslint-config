@@ -13,11 +13,11 @@
     "svelte": "*"
   },
   "dependencies": {
-    "@preflower/eslint-config-typescript": "workspace:^1.0.0"
+    "@preflower/eslint-config-typescript": "workspace:^1.0.0",
+    "eslint-plugin-svelte3": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^8.5.0",
-    "eslint-plugin-svelte3": "^3.2.1",
     "svelte": "^3.44.3"
   },
   "publishConfig": {

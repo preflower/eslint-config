@@ -9,7 +9,9 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "lint": "npx eslint --ext .js,.json,.vue --fix ."
+    "lint": "npx eslint --ext .js,.json,.vue --fix .",
+    "ci:version": "pnpm changeset version && pnpm install --lockfile-only",
+    "ci:publish": "pnpm publish -r"
   },
   "lint-staged": {
     "*.{js,json,vue}": [

@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsonc": "^2.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "jsonc-eslint-parser": "^2.0.4"
   },
   "devDependencies": {
-    "eslint": "^8.5.0"
+    "eslint": "^8.6.0"
   },
   "publishConfig": {
     "access": "public"

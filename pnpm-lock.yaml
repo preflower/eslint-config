@@ -52,7 +52,7 @@ importers:
 
   packages/react:
     specifiers:
-      '@preflower/eslint-config-typescript': workspace:^1.1.0
+      '@preflower/eslint-config-typescript': workspace:^1.1.1
       eslint: ^8.6.0
       eslint-plugin-react: ^7.28.0
     dependencies:

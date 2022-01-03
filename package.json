@@ -13,6 +13,11 @@
     "ci:version": "pnpm changeset version && pnpm install --lockfile-only",
     "ci:publish": "pnpm changeset publish"
   },
+  "lint-staged": {
+    "*.{js,json,vue}": [
+      "eslint --fix"
+    ]
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -23,6 +28,7 @@
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
     "@preflower/eslint-config": "workspace:*",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5"
   }
 }

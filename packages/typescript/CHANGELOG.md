@@ -1,5 +1,11 @@
 # @preflower/eslint-config-typescript
 
+## 1.1.0
+
+### Minor Changes
+
+- 937aa20: fix react version not specified warning and add ts rules
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @preflower/eslint-config-typescript
 
+## 1.1.1
+
+### Patch Changes
+
+- cf966ac: fix build error result ts not work
+
 ## 1.1.0
 
 ### Minor Changes

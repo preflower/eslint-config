@@ -1,5 +1,13 @@
 # @preflower/eslint-config-react
 
+## 1.1.1
+
+### Patch Changes
+
+- cf966ac: fix build error result ts not work
+- Updated dependencies [cf966ac]
+  - @preflower/eslint-config-typescript@1.1.1
+
 ## 1.1.0
 
 ### Minor Changes

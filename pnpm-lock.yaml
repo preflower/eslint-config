@@ -5,14 +5,14 @@ importers:
   .:
     specifiers:
       '@changesets/cli': ^2.19.0
-      '@commitlint/cli': ^16.0.1
+      '@commitlint/cli': ^16.0.2
       '@commitlint/config-conventional': ^16.0.0
       '@preflower/eslint-config': workspace:*
       husky: ^7.0.4
       lint-staged: ^12.1.5
     devDependencies:
       '@changesets/cli': 2.19.0
-      '@commitlint/cli': 16.0.1
+      '@commitlint/cli': 16.0.2
       '@commitlint/config-conventional': 16.0.0
       '@preflower/eslint-config': link:packages/default
       husky: 7.0.4
@@ -311,8 +311,8 @@ packages:
       prettier: 1.19.1
     dev: true
 
-  /@commitlint/cli/16.0.1:
-    resolution: {integrity: sha512-61gGRy65WiVDRsqP0dAR2fAgE3qrTBW3fgz9MySv32y5Ib3ZXXDDq6bGyQqi2dSaPuDYzNCRwwlC7mmQM73T/g==}
+  /@commitlint/cli/16.0.2:
+    resolution: {integrity: sha512-Jt7iaBjoLGC5Nq4dHPTvTYnqPGkElFPBtTXTvBpTgatZApczyjI2plE0oG4GYWPp1suHIS/VdVDOMpPZjGVusg==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:

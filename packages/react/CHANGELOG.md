@@ -1,5 +1,13 @@
 # @preflower/eslint-config-react
 
+## 1.1.2
+
+### Patch Changes
+
+- 62bf1bc: update version
+- Updated dependencies [62bf1bc]
+  - @preflower/eslint-config-typescript@1.1.2
+
 ## 1.1.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @preflower/eslint-config-typescript
 
+## 1.1.2
+
+### Patch Changes
+
+- 62bf1bc: update version
+
 ## 1.1.1
 
 ### Patch Changes

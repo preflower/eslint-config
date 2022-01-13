@@ -6,9 +6,6 @@ module.exports = {
     {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
-      parserOptions: {
-        parser: '@typescript-eslint/parser'
-      },
       rules: {
         'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 2, maxEOF: 0 }]
       }

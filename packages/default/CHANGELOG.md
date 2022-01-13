@@ -1,5 +1,15 @@
 # @preflower/eslint-config
 
+## 1.0.2
+
+### Patch Changes
+
+- 62bf1bc: update version
+- Updated dependencies [62bf1bc]
+  - @preflower/eslint-config-react@1.1.2
+  - @preflower/eslint-config-svelte@1.0.2
+  - @preflower/eslint-config-vue@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

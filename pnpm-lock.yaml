@@ -26,14 +26,14 @@ importers:
       eslint-plugin-jsonc: ^2.0.0
       eslint-plugin-node: ^11.1.0
       eslint-plugin-promise: ^6.0.0
-      jsonc-eslint-parser: ^2.0.4
+      jsonc-eslint-parser: ^2.1.0
     dependencies:
       eslint-config-standard: 16.0.3_8d3cc733693a55bff97313a767012510
       eslint-plugin-import: 2.25.4_eslint@8.6.0
       eslint-plugin-jsonc: 2.0.0_eslint@8.6.0
       eslint-plugin-node: 11.1.0_eslint@8.6.0
       eslint-plugin-promise: 6.0.0_eslint@8.6.0
-      jsonc-eslint-parser: 2.0.4_eslint@8.6.0
+      jsonc-eslint-parser: 2.1.0
     devDependencies:
       eslint: 8.6.0
 
@@ -1495,7 +1495,7 @@ packages:
     dependencies:
       eslint: 8.6.0
       eslint-utils: 3.0.0_eslint@8.6.0
-      jsonc-eslint-parser: 2.0.4_eslint@8.6.0
+      jsonc-eslint-parser: 2.1.0
       natural-compare: 1.4.0
     dev: false
 
@@ -1688,7 +1688,6 @@ packages:
       acorn: 8.7.0
       acorn-jsx: 5.3.2_acorn@8.7.0
       eslint-visitor-keys: 3.1.0
-    dev: true
 
   /esprima/4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
@@ -2297,17 +2296,14 @@ packages:
       minimist: 1.2.5
     dev: false
 
-  /jsonc-eslint-parser/2.0.4_eslint@8.6.0:
-    resolution: {integrity: sha512-a3ZRus4qea0tSRCW2qvF/spFt7iCpdeJbiDjxbFZRZ87JCF8sI8hbxpVvUBVyZ3fLB/RQnTi+Y/yZbMlqt1BCg==}
+  /jsonc-eslint-parser/2.1.0:
+    resolution: {integrity: sha512-qCRJWlbP2v6HbmKW7R3lFbeiVWHo+oMJ0j+MizwvauqnCV/EvtAeEeuCgoc/ErtsuoKgYB8U4Ih8AxJbXoE6/g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       acorn: 8.7.0
-      eslint-utils: 3.0.0_eslint@8.6.0
       eslint-visitor-keys: 3.1.0
-      espree: 9.2.0
+      espree: 9.3.0
       semver: 7.3.5
-    transitivePeerDependencies:
-      - eslint
     dev: false
 
   /jsonfile/4.0.0:

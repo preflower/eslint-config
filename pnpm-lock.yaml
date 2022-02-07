@@ -9,14 +9,14 @@ importers:
       '@commitlint/config-conventional': ^16.0.0
       '@preflower/eslint-config': workspace:*
       husky: ^7.0.4
-      lint-staged: ^12.3.2
+      lint-staged: ^12.3.3
     devDependencies:
       '@changesets/cli': 2.20.0
       '@commitlint/cli': 16.1.0
       '@commitlint/config-conventional': 16.0.0
       '@preflower/eslint-config': link:packages/default
       husky: 7.0.4
-      lint-staged: 12.3.2
+      lint-staged: 12.3.3
 
   packages/basic:
     specifiers:
@@ -2274,8 +2274,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/12.3.2:
-    resolution: {integrity: sha512-gtw4Cbj01SuVSfAOXC6ivd/7VKHTj51yj5xV8TgktFmYNMsZzXuSd5/brqJEA93v63wL7R6iDlunMANOechC0A==}
+  /lint-staged/12.3.3:
+    resolution: {integrity: sha512-OqcLsqcPOqzvsfkxjeBpZylgJ3SRG1RYqc9LxC6tkt6tNsq1bNVkAixBwX09f6CobcHswzqVOCBpFR1Fck0+ag==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:

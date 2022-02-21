@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@preflower/eslint-config-react": "workspace:^1.1.2",
-    "@preflower/eslint-config-svelte": "workspace:^1.0.2",
     "@preflower/eslint-config-vue": "workspace:^1.0.2"
   },
   "devDependencies": {

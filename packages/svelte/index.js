@@ -7,6 +7,8 @@ module.exports = {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
       rules: {
+        // fix svelte script error
+        'import/first': 'off',
         'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 2, maxEOF: 0 }]
       }
     }

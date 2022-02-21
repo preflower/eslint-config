@@ -40,12 +40,10 @@ importers:
   packages/default:
     specifiers:
       '@preflower/eslint-config-react': workspace:^1.1.2
-      '@preflower/eslint-config-svelte': workspace:^1.0.2
       '@preflower/eslint-config-vue': workspace:^1.0.2
       eslint: ^8.9.0
     dependencies:
       '@preflower/eslint-config-react': link:../react
-      '@preflower/eslint-config-svelte': link:../svelte
       '@preflower/eslint-config-vue': link:../vue
     devDependencies:
       eslint: 8.9.0

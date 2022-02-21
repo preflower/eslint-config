@@ -1,5 +1,11 @@
 # @preflower/eslint-config-react
 
+## 1.2.0
+
+### Minor Changes
+
+- 298092e: publish version
+
 ## 1.1.2
 
 ### Patch Changes

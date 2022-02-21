@@ -1,5 +1,11 @@
 # @preflower/eslint-config-svelte
 
+## 1.0.3
+
+### Patch Changes
+
+- 298092e: publish version
+
 ## 1.0.2
 
 ### Patch Changes

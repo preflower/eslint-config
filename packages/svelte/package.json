@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@preflower/eslint-config-typescript": "workspace:^1.1.2",
-    "eslint-plugin-svelte3": "^3.4.0"
+    "eslint-plugin-svelte3": "^3.4.1"
   },
   "devDependencies": {
-    "eslint": "^8.9.0",
+    "eslint": "^8.10.0",
     "svelte": "^3.46.4"
   },
   "publishConfig": {

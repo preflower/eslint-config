@@ -3,8 +3,9 @@ on:
   push:
     branches:
       - master
-    paths-ignore:
-      - 'README.md'
+    paths:
+      - 'packages/**'
+      - '!README.md'
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store

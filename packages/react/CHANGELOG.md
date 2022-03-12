@@ -1,5 +1,11 @@
 # @preflower/eslint-config-react
 
+## 1.3.0
+
+### Minor Changes
+
+- 3997d0c: feat: provide react hooks support
+
 ## 1.2.0
 
 ### Minor Changes

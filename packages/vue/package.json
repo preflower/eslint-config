@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@preflower/eslint-config-typescript": "workspace:^1.1.2",
-    "eslint-plugin-vue": "^8.5.0",
+    "eslint-plugin-vue": "^8.6.0",
     "vue-eslint-parser": "^8.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.12.0"
+    "eslint": "^8.13.0"
   },
   "publishConfig": {
     "access": "public"

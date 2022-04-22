@@ -3,6 +3,9 @@ module.exports = {
     'plugin:vue/vue3-strongly-recommended',
     '@preflower/eslint-config-typescript'
   ],
+  env: {
+    'vue/setup-compiler-macros': true
+  },
   overrides: [
     {
       files: ['*.vue'],

@@ -1,5 +1,11 @@
 # @preflower/eslint-config-vue
 
+## 1.1.0
+
+### Minor Changes
+
+- 37ee878: support setup macro compiler
+
 ## 1.0.2
 
 ### Patch Changes

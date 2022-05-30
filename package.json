@@ -29,6 +29,6 @@
     "@commitlint/config-conventional": "^16.2.4",
     "@preflower/eslint-config": "workspace:*",
     "husky": "^7.0.4",
-    "lint-staged": "^12.4.1"
+    "lint-staged": "^12.4.2"
   }
 }

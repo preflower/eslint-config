@@ -66,13 +66,13 @@ importers:
       '@preflower/eslint-config-typescript': workspace:^1.1.2
       eslint: ^8.20.0
       eslint-plugin-svelte3: ^3.4.1
-      svelte: ^3.48.0
+      svelte: ^3.49.0
     dependencies:
       '@preflower/eslint-config-typescript': link:../typescript
-      eslint-plugin-svelte3: 3.4.1_eslint@8.20.0+svelte@3.48.0
+      eslint-plugin-svelte3: 3.4.1_eslint@8.20.0+svelte@3.49.0
     devDependencies:
       eslint: 8.20.0
-      svelte: 3.48.0
+      svelte: 3.49.0
 
   packages/typescript:
     specifiers:
@@ -1734,7 +1734,7 @@ packages:
       string.prototype.matchall: 4.0.7
     dev: false
 
-  /eslint-plugin-svelte3/3.4.1_eslint@8.20.0+svelte@3.48.0:
+  /eslint-plugin-svelte3/3.4.1_eslint@8.20.0+svelte@3.49.0:
     resolution: {integrity: sha512-7p59WG8qV8L6wLdl4d/c3mdjkgVglQCdv5XOTk/iNPBKXuuV+Q0eFP5Wa6iJd/G2M1qR3BkLPEzaANOqKAZczw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -1742,7 +1742,7 @@ packages:
       svelte: ^3.2.0
     dependencies:
       eslint: 8.20.0
-      svelte: 3.48.0
+      svelte: 3.49.0
     dev: false
 
   /eslint-plugin-vue/8.7.1_eslint@8.20.0:
@@ -3482,8 +3482,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte/3.48.0:
-    resolution: {integrity: sha512-fN2YRm/bGumvjUpu6yI3BpvZnpIm9I6A7HR4oUNYd7ggYyIwSA/BX7DJ+UXXffLp6XNcUijyLvttbPVCYa/3xQ==}
+  /svelte/3.49.0:
+    resolution: {integrity: sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==}
     engines: {node: '>= 8'}
 
   /term-size/2.2.1:

@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "eslint": "^8.20.0",
-    "svelte": "^3.48.0"
+    "svelte": "^3.49.0"
   },
   "publishConfig": {
     "access": "public"

@@ -4,14 +4,14 @@ importers:
 
   .:
     specifiers:
-      '@changesets/cli': ^2.23.1
+      '@changesets/cli': ^2.23.2
       '@commitlint/cli': ^16.3.0
       '@commitlint/config-conventional': ^16.2.4
       '@preflower/eslint-config': workspace:*
       husky: ^7.0.4
       lint-staged: ^12.5.0
     devDependencies:
-      '@changesets/cli': 2.23.1
+      '@changesets/cli': 2.23.2
       '@commitlint/cli': 16.3.0
       '@commitlint/config-conventional': 16.2.4
       '@preflower/eslint-config': link:packages/default
@@ -175,8 +175,8 @@ packages:
       '@changesets/types': 5.0.0
     dev: true
 
-  /@changesets/cli/2.23.1:
-    resolution: {integrity: sha512-yXQ29Iw/26yq1oJpOCa7BJDeUvuurZmREmCX9p9m5RxlKNDnROJBylQDCVfqQdZbeV2jfvd3XRKvci80SvGssg==}
+  /@changesets/cli/2.23.2:
+    resolution: {integrity: sha512-o7CWC+mcwOmA3yK5axqHOSYPYEjX/x+nq/s9aX78AyzH1SQZa6L5HX4P9uUXibyjcKynklkmusxv8vN8+hJggA==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.16.5

@@ -17,7 +17,7 @@
     "eslint-plugin-svelte3": "^3.4.1"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
+    "eslint": "^8.22.0",
     "svelte": "^3.49.0"
   },
   "publishConfig": {

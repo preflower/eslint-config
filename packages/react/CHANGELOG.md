@@ -1,5 +1,17 @@
 # @preflower/eslint-config-react
 
+## 2.0.0
+
+### Major Changes
+
+- 4df3c56: update deps and use n instead of node module
+
+### Patch Changes
+
+- Updated dependencies [4df3c56]
+- Updated dependencies [1e7ea26]
+  - @preflower/eslint-config-typescript@2.0.0
+
 ## 1.3.0
 
 ### Minor Changes

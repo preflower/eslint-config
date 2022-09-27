@@ -14,7 +14,7 @@ module.exports = {
         parser: '@typescript-eslint/parser'
       },
       rules: {
-        // Off Conflict rules
+        // Off conflict rules
         'react-hooks/rules-of-hooks': 'off'
       }
     }
@@ -22,6 +22,8 @@ module.exports = {
   rules: {
     // Off
     'vue/no-use-v-if-with-v-for': 'off',
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    // Off conflict rules
+    'func-call-spacing': 'off'
   }
 }

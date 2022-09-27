@@ -10,6 +10,10 @@ module.exports = {
       rules: {
         // TS
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
+        '@typescript-eslint/strict-boolean-expressions': ['error', {
+          // Allow Nullish and boolean for expression
+          allowNullableBoolean: true
+        }],
         // Override JS
         indent: 'off',
         '@typescript-eslint/indent': ['error', 2],

@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@preflower/eslint-config-typescript": "workspace:^1.1.2",
-    "eslint-plugin-svelte3": "^3.4.1"
+    "eslint-plugin-svelte3": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^8.24.0",

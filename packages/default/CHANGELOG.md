@@ -1,5 +1,22 @@
 # @preflower/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- 4df3c56: update deps and use n instead of node module
+
+### Minor Changes
+
+- 1e7ea26: update rules
+
+### Patch Changes
+
+- Updated dependencies [4df3c56]
+- Updated dependencies [1e7ea26]
+  - @preflower/eslint-config-vue@2.0.0
+  - @preflower/eslint-config-react@2.0.0
+
 ## 1.0.2
 
 ### Patch Changes

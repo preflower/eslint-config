@@ -3,12 +3,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'index.js'
-      - 'typescript.js'
-      - 'vue.js'
-      - 'react.js'
-      - 'package.json'
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store

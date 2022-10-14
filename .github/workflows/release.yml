@@ -13,13 +13,6 @@ env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
-  deploy:
-    steps:
-      - attach_workspace:
-          at: ~/repo
-      - run:
-          name: Authenticate with registry
-          command: npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
   release:
     runs-on: ubuntu-latest
     steps:

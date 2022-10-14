@@ -6,7 +6,8 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "npx eslint --ext .js,.json,.vue --fix .",
-    "release": "release-it"
+    "ci:version": "pnpm changeset version && pnpm install --lockfile-only",
+    "ci:publish": "pnpm changeset publish"
   },
   "keywords": [
     "eslint",
@@ -49,28 +50,9 @@
     "vue-eslint-parser": "^9.1.0"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^5.1.1",
+    "@changesets/cli": "^2.25.0",
     "eslint": "^8.25.0",
-    "release-it": "^15.5.0",
     "typescript": "^4.8.3"
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular",
-        "infile": "CHANGELOG.md"
-      }
-    }
   },
   "publishConfig": {
     "access": "public"

@@ -1,52 +1,94 @@
-# @preflower/eslint-config
-A eslint plugin base on standard
+# eslint-config-ted
+
+My Eslint Rules
+
+- Base on [Standard](https://github.com/standard/standard/blob/HEAD/docs/README-zhcn.md)
+- Provide Typescript / Vue / React Support
+- Provide JSON Support
 
 ## Usage
-### Install
+
+### Default
+
+- Follow with [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)
+- Provide `JSON` file check
+
 ```bash
-$ pnpm add -D @preflower/eslint-config
+pnpm i -D eslint eslint-config-ted
 ```
 
-### Config `.eslintrc`
-```
+Config `.eslintrc`
+```js
 {
   "extends": [
-    "@preflower"
+    "ted"
+  ]
+}
+```
+
+### TS
+
+- Follow with [eslint-config-standard-with-typescript](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
+
+```bash
+pnpm i -D typescript
+```
+
+Config `.eslintrc`
+
+```js
+{
+  "extends": [
+    "ted",
+    "ted/typescript"
   ],
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "extraFileExtensions": [".vue"]
+    "project": [
+      './tsconfig.json'
+    ]
+  }
+}
+```
+> Notice: if need support `vue` / `react`, `ted/typescript` must set after `ted/vue` or `ted/react`, otherwise typescript rules will be overrided.
+
+### Vue
+
+- Follow with [eslint-config-vue/vue3-strongly-recommended](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability) rules
+- Default open `vue/setup-compiler-macros` config
+
+Config `.eslintrc`
+
+```js
+{
+  "extends": [
+    "ted",
+    "ted/vue"
+  ],
+  "parserOptions": {
+    "extraFileExtensions": ['.vue']
   }
 }
 ```
 
-## Svelte
-### Install
-```bash
-$ pnpm add -D @preflower/eslint-config-svelte
-```
+### React
 
-### Config `.eslintrc`
-```
+- Follow with [eslint-config-react/recommended](https://www.npmjs.com/package/eslint-plugin-react#recommended) rules
+- Hooks follow with [eslint-config-react-hooks/recommended](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) rules
+
+Config `.eslintrc`
+
+```js
 {
   "extends": [
-    "@preflower/eslint-config-svelte"
-  ],
-  "parserOptions": {
-    "project": "./tsconfig.json",
-    "extraFileExtensions": [".svelte"]
-  }
-}
-```
-
-### Config `tsconfig.json`
-```
-{
-  "extends": "@tsconfig/svelte/tsconfig.json"
+    "ted",
+    "ted/react"
+  ]
 }
 ```
 
 ## License
 MIT
 
-Inspired by [@antfu/eslint-config](https://github.com/antfu/eslint-config)
+Inspired by 
+- [@antfu/eslint-config](https://github.com/antfu/eslint-config)
+- [eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy)

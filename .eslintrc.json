@@ -1,8 +1,0 @@
-{
-  "extends": "@preflower",
-  "parserOptions": {
-    "sourceType": "module",
-    "project": "./tsconfig.json",
-    "extraFileExtensions": [".svelte"]
-  }
-}

@@ -1,34 +1,84 @@
 {
-  "name": "@preflower/eslint-monorepo",
-  "version": "0.0.1",
-  "description": "A eslint plugin base on standard",
-  "license": "MIT",
-  "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
+  "name": "eslint-config-ted",
+  "version": "1.0.0",
+  "description": "Ted's Eslint Rules",
   "main": "index.js",
-  "private": "true",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "lint": "npx eslint --ext .js,.json,.vue --fix .",
-    "ci:version": "pnpm changeset version && pnpm install --lockfile-only",
-    "ci:publish": "pnpm changeset publish"
+    "release": "release-it"
   },
-  "lint-staged": {
-    "*.{js,json,vue}": [
-      "eslint --fix"
-    ]
+  "keywords": [
+    "eslint",
+    "vue",
+    "react",
+    "typescript",
+    "config"
+  ],
+  "repository": "https://github.com/preflower/eslint-config",
+  "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/preflower/eslint-config/issues"
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
-  "devDependencies": {
-    "@changesets/cli": "^2.24.4",
+  "peerDependencies": {
+    "eslint": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@preflower/eslint-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsonc": "^2.4.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-vue": "^9.5.1",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3"
-  }
+    "jsonc-eslint-parser": "^2.1.0",
+    "vue-eslint-parser": "^9.1.0"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^5.1.1",
+    "eslint": "^8.25.0",
+    "release-it": "^15.5.0",
+    "typescript": "^4.8.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "typescript.js",
+    "vue.js",
+    "react.js"
+  ]
 }

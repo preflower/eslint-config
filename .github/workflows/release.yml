@@ -1,39 +1,43 @@
-name: Changeset Release
+name: Release
 on:
   push:
     branches:
       - master
     paths:
-      - '.changeset/**'
+      - 'index.js'
+      - 'typescript.js'
+      - 'vue.js'
+      - 'react.js'
+      - 'package.json'
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
+  deploy:
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Authenticate with registry
+          command: npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
   release:
-    timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Setup node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 14
+      - name: NPM Auth
+        command: npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - name: Install pnpm
         run: npm i pnpm@latest -g
       - name: Setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: Install dependencies
         run: pnpm install
-      - name: Create and publish versions
-        uses: changesets/action@v1
-        with:
-          version: pnpm ci:version
-          commit: "chore: update versions"
-          title: "chore: update versions"
-          publish: pnpm ci:publish
+      - run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

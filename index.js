@@ -67,6 +67,9 @@ module.exports = {
     }
   ],
   rules: {
+    /**
+     * 允许 void 用作表达式中，解决不需要给Promise赋值的场景
+     */
     'no-void': ['error', { allowAsStatement: true }]
   }
 }

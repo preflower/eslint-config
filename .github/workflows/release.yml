@@ -20,7 +20,8 @@ jobs:
         with:
           fetch-depth: 0
       - name: NPM Auth
-        command: npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
       - name: git config
         run: |
           git config user.name "${GITHUB_ACTOR}"
@@ -31,6 +32,7 @@ jobs:
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
       - name: Install dependencies
         run: pnpm install
+      - name: Release
       - run: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

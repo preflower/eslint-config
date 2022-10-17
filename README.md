@@ -49,12 +49,13 @@ Config `.eslintrc`
   }
 }
 ```
-> Notice: if need support `vue` / `react`, `ted/typescript` must set after `ted/vue` or `ted/react`, otherwise typescript rules will be overrided.
+> Notice: if you wanna use in `vue`, `typescript` must set after `ted/vue`, otherwise typescript rules will be overrided.
 
 ### Vue
 
 - Follow with [eslint-config-vue/vue3-strongly-recommended](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability) rules
 - Default open `vue/setup-compiler-macros` config
+
 
 Config `.eslintrc`
 
@@ -81,6 +82,19 @@ Config `.eslintrc`
 {
   "extends": [
     "ted",
+    "ted/react"
+  ]
+}
+```
+
+#### With TS
+
+Config `.eslintrc`
+```js
+{
+  "extends": [
+    "ted",
+    "ted/typescript",
     "ted/react"
   ]
 }

@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     './index.js',
     './vue.js',
-    './react.js',
+    // './react.js',
     './typescript.js'
   ],
   parserOptions: {

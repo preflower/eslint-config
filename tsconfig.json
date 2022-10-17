@@ -5,6 +5,7 @@
     "module": "esnext",
     "baseUrl": ".",
     "outDir": "dist/",
+    "moduleResolution": "Node",
     /**
      * Typecheck JS in `.svelte` and `.js` files by default.
      * Disable checkJs if you'd like to use dynamic types in JS.
@@ -17,8 +18,16 @@
   },
   "include": [
     "fix.ts",
-    "example/**/*.js",
-    "example/**/*.ts",
-    "example/**/*.vue"
+    "index.js",
+    "typescript.js",
+    "vue.js",
+    "react.js",
+    ".eslintrc.js",
+    "./example/**/*.js",
+    "./example/**/*.ts",
+    "./example/**/*.vue",
+    "tsconfig.json",
+    "renovate.json",
+    "package.json"
   ]
 }

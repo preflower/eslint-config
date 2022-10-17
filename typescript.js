@@ -1,11 +1,11 @@
 module.exports = {
-  extends: [
-    'standard-with-typescript'
-  ],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
+      extends: [
+        'standard-with-typescript'
+      ],
       rules: {
         // TS
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
@@ -16,8 +16,17 @@ module.exports = {
           allowNullableBoolean: true
         }],
         // Override JS
+        /**
+         * 关闭 js indent 规则
+         * @reason 使用 TS indent 替代它
+         */
         indent: 'off',
         '@typescript-eslint/indent': ['error', 2],
+        /**
+         * 关闭 js no-undef 规则
+         * @reason TS 自带该校验
+         */
+        'no-undef': 'off',
         // Off
         /**
          * 允许使用 非空断言

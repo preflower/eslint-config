@@ -1,7 +1,12 @@
 <template>
-  <Test />
+  <test />
+  <div>{{ a }}</div>
 </template>
 
-<script lang="ts" setup>
-const a = 1;
+<script setup lang="ts">
+    interface a {}
+
+const a = 1
+
+const b_3 = 45445
 </script>

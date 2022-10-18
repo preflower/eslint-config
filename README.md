@@ -71,6 +71,10 @@ Config `.eslintrc`
 }
 ```
 
+#### Known Issues
+
+- `props` type cannot be infered in template expression when not import vue related api
+
 ### React
 
 - Follow with [eslint-config-react/recommended](https://www.npmjs.com/package/eslint-plugin-react#recommended) rules

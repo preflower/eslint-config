@@ -16,7 +16,7 @@ specifiers:
   eslint-plugin-react: ^7.31.10
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-vue: ^9.6.0
-  husky: ^8.0.1
+  husky: ^8.0.2
   jsonc-eslint-parser: ^2.1.0
   typescript: ^4.8.3
   vue: ^3.2.45
@@ -36,7 +36,7 @@ dependencies:
   eslint-plugin-react: 7.31.10_eslint@8.26.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.26.0
   eslint-plugin-vue: 9.6.0_eslint@8.26.0
-  husky: 8.0.1
+  husky: 8.0.2
   jsonc-eslint-parser: 2.1.0
   vue-eslint-parser: 9.1.0_eslint@8.26.0
 
@@ -1948,8 +1948,8 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: false
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: false

@@ -34,8 +34,8 @@
   "dependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
@@ -44,7 +44,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-vue": "^9.7.0",
+    "eslint-plugin-vue": "^9.8.0",
     "husky": "^8.0.2",
     "jsonc-eslint-parser": "^2.1.0",
     "vue-eslint-parser": "^9.1.0"

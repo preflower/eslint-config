@@ -47,7 +47,7 @@
     "eslint-plugin-vue": "^9.11.0",
     "husky": "^8.0.3",
     "jsonc-eslint-parser": "^2.2.0",
-    "vue-eslint-parser": "^9.1.1"
+    "vue-eslint-parser": "^9.2.1"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",

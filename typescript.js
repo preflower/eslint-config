@@ -11,9 +11,13 @@ module.exports = {
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
         '@typescript-eslint/strict-boolean-expressions': ['error', {
           /**
-           * 允许 Nullish 和 Boolean 值在表达式中
+           * 允许自动判断 Nullish 和 Boolean 值
            */
-          allowNullableBoolean: true
+          allowNullableBoolean: true,
+          /**
+           * 允许自动判断 Nullish 和 Object 值
+           */
+          allowNullableObject: true
         }],
         // Override JS
         /**
@@ -37,7 +41,12 @@ module.exports = {
          * 函数返回值必须与声明的类型一致
          * @reason 返回值类型可以推导出来
          */
-        '@typescript-eslint/explicit-function-return-type': 'off'
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        /**
+         * React 组件必须写 propTypes
+         * @reason 类型相关的约束交给 TypeScript
+         */
+        'react/prop-types': 'off'
       }
     }
   ]

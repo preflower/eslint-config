@@ -1,6 +1,9 @@
 <template>
   <test />
-  <div>{{ a }}</div>
+  <!-- 此时应该报 @typescript-eslint/strict-boolean-expressions 错误 -->
+  <div v-if="!props.n">
+    {{ a }}
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -9,6 +12,7 @@
 
 const props = defineProps<{
   c: number
+  n?: string
 }>()
 
 // 此时正确的 props.c 类型应为 number

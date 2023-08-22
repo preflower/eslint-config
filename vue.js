@@ -1,6 +1,5 @@
 // 将 ts config 内的 overrides 同步到 .vue 文件校验下
 const upstreamRules = [
-  ...require('eslint-config-standard-with-typescript').overrides,
   ...require('./typescript').overrides
 ].reduce((pre, override) => {
   if (override.files.includes('*.ts')) {

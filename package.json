@@ -32,8 +32,6 @@
     "typescript": "*"
   },
   "dependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
     "eslint-config-standard": "^17.1.0",
@@ -45,15 +43,17 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-vue": "^9.17.0",
-    "husky": "^8.0.3",
     "jsonc-eslint-parser": "^2.3.0",
     "vue-eslint-parser": "^9.3.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@changesets/cli": "^2.26.2",
     "eslint": "^8.47.0",
     "typescript": "^5.1.6",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "husky": "^8.0.3"
   },
   "publishConfig": {
     "access": "public"

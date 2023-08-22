@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 2.0.2
+
+### Patch Changes
+
+- 19b472b: chore: update dependencies version
+
 ## 2.0.1
 
 ### Patch Changes

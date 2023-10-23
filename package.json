@@ -52,7 +52,7 @@
     "@changesets/cli": "^2.26.2",
     "eslint": "^8.51.0",
     "typescript": "^5.2.2",
-    "vue": "^3.3.4",
+    "vue": "^3.3.6",
     "husky": "^8.0.3"
   },
   "publishConfig": {

@@ -8,6 +8,13 @@ module.exports = {
       ],
       rules: {
         // TS
+        '@typescript-eslint/prefer-nullish-coalescing': ['error', {
+          /**
+           * 条件校验时忽略该规则
+           * @reason 条件校验的场景下该规则往往不符合开发者本意
+           */
+          ignoreConditionalTests: true
+        }],
         '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
         '@typescript-eslint/strict-boolean-expressions': ['error', {
           /**

@@ -64,8 +64,26 @@ Config `.eslintrc`
   "extends": [
     "ted",
     "ted/vue"
+  ]
+}
+```
+
+#### With TS
+Config `.eslintrc`
+
+```js
+{
+  "extends": [
+    '.ted',
+    'ted/vue',
+    'ted/typescript'
   ],
+  "parser": 'vue-eslint-parser',
   "parserOptions": {
+    "parser": '@typescript-eslint/parser',
+    "project": [
+      './tsconfig.json'
+    ],
     "extraFileExtensions": ['.vue']
   }
 }
@@ -98,11 +116,17 @@ Config `.eslintrc`
 {
   "extends": [
     "ted",
-    "ted/typescript",
-    "ted/react"
+    "ted/react",
+    "ted/typescript"
   ]
 }
 ```
+
+## Known Issues
+
+### When i use with typescript, i can't check .js file?
+this because lint conflict with js and ts, right now is not support
+use both of them.
 
 ## License
 MIT

@@ -14,7 +14,9 @@
      */
     "allowJs": true,
     "checkJs": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "fix.ts",
@@ -23,9 +25,8 @@
     "vue.js",
     "react.js",
     ".eslintrc.js",
-    "./example/**/*.js",
-    "./example/**/*.ts",
-    "./example/**/*.vue",
+    "example/**/*.tsx",
+    "example/**/*",
     "tsconfig.json",
     "renovate.json",
     "package.json"

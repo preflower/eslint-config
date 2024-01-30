@@ -49,13 +49,11 @@ Config `.eslintrc`
   }
 }
 ```
-> Notice: if you wanna use in `vue`, `typescript` must set after `ted/vue`, otherwise typescript rules will be overrided.
 
 ### Vue
 
 - Follow with [eslint-config-vue/vue3-strongly-recommended](https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability) rules
 - Default open `vue/setup-compiler-macros` config
-
 
 Config `.eslintrc`
 
@@ -74,17 +72,17 @@ Config `.eslintrc`
 ```js
 {
   "extends": [
-    '.ted',
-    'ted/vue',
-    'ted/typescript'
+    "ted",
+    "ted/vue",
+    "ted/typescript"
   ],
-  "parser": 'vue-eslint-parser',
+  "parser": "vue-eslint-parser",
   "parserOptions": {
-    "parser": '@typescript-eslint/parser',
+    "parser": "@typescript-eslint/parser",
     "project": [
-      './tsconfig.json'
+      "./tsconfig.json"
     ],
-    "extraFileExtensions": ['.vue']
+    "extraFileExtensions": [".vue"]
   }
 }
 ```

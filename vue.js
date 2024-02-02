@@ -18,16 +18,16 @@ module.exports = {
       }
     ],
     /**
-     * 组件以Options引入时kebab-case形式
+     * 组件以Options引入时PascalCase形式, 适应目前社区主流的PascalCase命名风格
      * @reason 统一团队组件使用方式
      */
-    'vue/component-options-name-casing': ['error', 'kebab-case'],
+    'vue/component-options-name-casing': ['error', 'PascalCase'],
     /**
-     * 组件命名必须以kebab-case形式
+     * 组件命名必须以PascalCase形式
      * @reason 统一团队组件使用方式
      */
     'vue/component-definition-name-casing': [
-      'error', 'kebab-case'
+      'error', 'PascalCase'
     ],
     /**
      * 事件名称必须以camelCase形式
@@ -39,7 +39,5 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     // Off conflict rules
     'func-call-spacing': 'off'
-    // 应用 overrides 到 vue 文件
-    // ...upstreamRules
   }
 }

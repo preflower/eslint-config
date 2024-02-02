@@ -8,12 +8,12 @@ module.exports = {
   parser: 'vue-eslint-parser',
   rules: {
     /**
-     * 组件名称使用时kebab-case形式
+     * 组件名称使用时PascalCase形式
      * @reason 统一团队组件使用方式
      */
     'vue/component-name-in-template-casing': [
       'error',
-      'kebab-case', {
+      'PascalCase', {
         registeredComponentsOnly: false
       }
     ],

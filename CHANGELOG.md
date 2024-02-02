@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 3.0.2
+
+### Patch Changes
+
+- e09a8de: fix miss out config error
+
 ## 3.0.1
 
 ### Patch Changes

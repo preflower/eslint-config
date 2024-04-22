@@ -56,7 +56,7 @@
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "typescript": "^5.4.5",
-    "vue": "^3.4.21"
+    "vue": "^3.4.23"
   },
   "publishConfig": {
     "access": "public"

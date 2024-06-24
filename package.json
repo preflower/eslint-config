@@ -44,7 +44,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-vue": "^9.26.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "vue-eslint-parser": "^9.4.2"
+    "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.7",

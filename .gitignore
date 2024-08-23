@@ -6,3 +6,5 @@ pnpm-lock.yaml
 .npmrc
 
 .package-lock.json
+esm/
+dist/

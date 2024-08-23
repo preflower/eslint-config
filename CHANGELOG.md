@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.0
+
+### Major Changes
+
+- 5513945: Upgrade to eslint flat config
+
 ## 3.0.2
 
 ### Patch Changes

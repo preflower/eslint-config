@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.1
+
+### Patch Changes
+
+- 36f5c57: Fix github CD not build output file error
+
 ## 4.0.0
 
 ### Major Changes

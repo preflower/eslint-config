@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.2
+
+### Patch Changes
+
+- 3182ecb: Fix output file not contain format error
+
 ## 4.0.1
 
 ### Patch Changes

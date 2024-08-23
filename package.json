@@ -17,24 +17,12 @@
   "repository": "https://github.com/preflower/eslint-config",
   "author": "Ted Lin <preflower.lin@gmail.com> (https://github.com/preflower)",
   "files": [
-    "dist",
-    "esm"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "esm/index.js",
-  "types": "lib/index.d.ts",
-  "exports": {
-    ".": {
-      "require": {
-        "types": "./lib/index.d.ts",
-        "default": "./lib/index.js"
-      },
-      "import": {
-        "types": "./esm/index.d.ts",
-        "default": "./esm/index.js"
-      }
-    }
-  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": "./dist/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -42,9 +30,7 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint --flag unstable_ts_config .",
-    "build:cjs": "tsc -p tsconfig.build.json",
-    "build:es": "tsc -p tsconfig.build.json -m esNext --outDir esm",
-    "build": "pnpm build:cjs && pnpm build:es",
+    "build": "tsup",
     "ci:version": "pnpm changeset version && pnpm install --lockfile-only",
     "ci:publish": "pnpm build && pnpm changeset publish"
   },
@@ -79,6 +65,7 @@
     "eslint": "^9.9.0",
     "husky": "^8.0.3",
     "react": "^18.3.1",
+    "tsup": "^8.2.4",
     "typescript": "^5.5.4",
     "vue": "^3.4.38"
   }

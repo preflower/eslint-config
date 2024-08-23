@@ -1,4 +1,4 @@
-import { ted } from './esm/index'
+import { ted } from './dist/index.js'
 
 // import { ted } from './src/index'
 

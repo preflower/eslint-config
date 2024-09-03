@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.4
+
+### Patch Changes
+
+- 65f9742: Add projectService: true to support references
+
 ## 4.0.3
 
 ### Patch Changes

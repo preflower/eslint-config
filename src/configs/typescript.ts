@@ -43,6 +43,13 @@ export function typescript () {
         '@typescript-eslint/no-misused-promises': [
           'error', { checksVoidReturn: false }
         ],
+        /**
+         * 禁止明确指定 any 类型
+         * @reason 某些Rest参数的场景下需要为任意类型, 例如定义AnyFunction
+         */
+        '@typescript-eslint/no-explicit-any': [
+          'error', { ignoreRestArgs: true }
+        ],
         /* ----------- End: Override recommended rules --------- */
         /* ----------- Override stylistic rules --------- */
         /**

@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.3
+
+### Patch Changes
+
+- 99bb5a8: Allow use any when define rest args
+
 ## 4.0.2
 
 ### Patch Changes

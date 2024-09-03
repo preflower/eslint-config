@@ -13,7 +13,8 @@ export function typescript () {
       files: [GLOB_TS, GLOB_TSX],
       languageOptions: {
         parserOptions: {
-          project: true
+          project: true,
+          projectService: true
         }
       },
       rules: {

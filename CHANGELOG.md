@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.6
+
+### Patch Changes
+
+- df8eeb4: fix eslint invalid error
+
 ## 4.0.5
 
 ### Patch Changes

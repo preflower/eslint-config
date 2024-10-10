@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ted",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Ted's Eslint Rules",
   "type": "module",
   "keywords": [

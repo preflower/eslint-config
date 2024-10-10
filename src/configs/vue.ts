@@ -21,6 +21,7 @@ export function vue (
     : []
 
   return [
+    ...vueTs,
     {
       name: 'ted/vue/auto-imports',
       // This allows Vue plugin to work with auto imports
@@ -64,7 +65,6 @@ export function vue (
         }
       },
       rules: {
-        ...vueTs,
         ...pluginVue.configs['vue3-strongly-recommended'].rules,
         /**
          * 组件名称使用时PascalCase形式

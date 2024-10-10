@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.7
+
+### Patch Changes
+
+- 09e94ea: fix
+
 ## 4.0.6
 
 ### Patch Changes

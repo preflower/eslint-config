@@ -9,7 +9,7 @@ export default ted([
         parser: '@typescript-eslint/parser',
         project: [
           './tsconfig.json',
-          './tsconfig.node.json'
+          './tsconfig.build.json'
         ]
       }
     }
@@ -19,4 +19,6 @@ export default ted([
       'esm/*'
     ]
   }
-])
+], {
+  typescript: false
+})

@@ -4,6 +4,7 @@ import parserVue from 'vue-eslint-parser'
 import { GLOB_VUE } from './globs'
 import { Linter } from 'eslint'
 import { typescriptCore } from './typescript'
+import tseslint from 'typescript-eslint'
 
 export function vue (
   options: OptionsHasTypeScript
@@ -63,6 +64,10 @@ export function vue (
             : null,
           sourceType: 'module'
         }
+      },
+      plugins: {
+        '@typescript-eslint': tseslint.plugin,
+        vue: pluginVue
       },
       rules: {
         ...pluginVue.configs['vue3-strongly-recommended'].rules,

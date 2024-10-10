@@ -1,5 +1,5 @@
 <template>
-  <test />
+  <Test />
   <!-- 此时应该报 @typescript-eslint/strict-boolean-expressions 错误 -->
   <div v-if="!props.n">
     {{ a }}

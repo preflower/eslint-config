@@ -3,10 +3,23 @@ import pluginVue from 'eslint-plugin-vue'
 import parserVue from 'vue-eslint-parser'
 import { GLOB_VUE } from './globs'
 import { Linter } from 'eslint'
+import { typescriptCore } from './typescript'
 
 export function vue (
   options: OptionsHasTypeScript
 ) {
+  const vueTs = options.typescript
+    ? typescriptCore
+      .filter((config) => config.name !== 'typescript-eslint/base')
+      .map((config) => {
+        return {
+          ...config,
+          files: [GLOB_VUE],
+          name: `ted/vue/${config.name?.replace('ted/', '') ?? 'anonymous'}`
+        }
+      })
+    : []
+
   return [
     {
       name: 'ted/vue/auto-imports',
@@ -51,6 +64,7 @@ export function vue (
         }
       },
       rules: {
+        ...vueTs,
         ...pluginVue.configs['vue3-strongly-recommended'].rules,
         /**
          * 组件名称使用时PascalCase形式

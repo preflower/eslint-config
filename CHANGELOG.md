@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.5
+
+### Patch Changes
+
+- aac39c0: fix vue ts not follow typescript file config
+
 ## 4.0.4
 
 ### Patch Changes

@@ -49,6 +49,13 @@ export const typescriptCore = tseslint.config({
     '@typescript-eslint/no-explicit-any': [
       'error', { ignoreRestArgs: true }
     ],
+    /**
+     * 禁止未使用变量声明
+     * @reason 某些函数参数可能未使用，但需要被定义
+     */
+    '@typescript-eslint/no-unused-vars': [
+      'error', { argsIgnorePattern: '^_' }
+    ],
     /* ----------- End: Override recommended rules --------- */
     /* ----------- Override stylistic rules --------- */
     /**
@@ -84,6 +91,7 @@ export const typescriptCore = tseslint.config({
       ignoreConditionalTests: true
     }],
     /* ----------- End: Override stylistic rules --------- */
+    /* ----------- Custom enhance rules --------- */
     /**
      * 条件判断需要严格检查
      */
@@ -97,6 +105,7 @@ export const typescriptCore = tseslint.config({
        */
       allowNullableObject: true
     }],
+    /* ----------- End: Custom enhance rules --------- */
     /* ----------- Override JS ----------- */
     /**
      * 关闭 js no-undef 规则

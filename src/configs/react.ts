@@ -1,3 +1,4 @@
+import { Linter } from 'eslint'
 import { GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX } from './globs'
 import pluginReact from 'eslint-plugin-react'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
@@ -50,5 +51,5 @@ export function react () {
         }]
       }
     }
-  ]
+  ] as Linter.Config[]
 }

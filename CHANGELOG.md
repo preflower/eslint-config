@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.8
+
+### Patch Changes
+
+- c916f9c: fix some args trigger no-unused-vars error
+
 ## 4.0.7
 
 ### Patch Changes

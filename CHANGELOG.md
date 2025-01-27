@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.0.9
+
+### Patch Changes
+
+- 879f1fc: Fix react not config indent error
+
 ## 4.0.8
 
 ### Patch Changes

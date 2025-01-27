@@ -17,6 +17,11 @@ export function react () {
         ...pluginReact.configs['jsx-runtime'].rules,
         ...pluginReactHooks.configs.recommended.rules,
         /**
+         * 配置 JSX 缩进
+         */
+        'react/jsx-indent': ['error', 2],
+        'react/jsx-indent-props': ['error', 2],
+        /**
          * 类型相关的约束交给 TypeScript
          */
         'react/prop-types': 'off',

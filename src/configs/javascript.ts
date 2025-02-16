@@ -262,6 +262,35 @@ export const javascript: Linter.Config[] = [
       'import/no-named-default': 'error',
       'import/no-webpack-loader-syntax': 'error',
 
+      /**
+       * 配置 import 顺序, 使其按优先级展示
+       */
+      'import/order': [
+        'error',
+        {
+          groups: [
+            'builtin', // Node内置
+            'external', // npm包
+            'internal', // 项目内部
+            'parent', // 父目录
+            'sibling', // 同级
+            'index' // 目录索引
+          ],
+          pathGroups: [
+            {
+              pattern: '@/**', // 给别名路径特殊待遇
+              group: 'internal',
+              position: 'after'
+            }
+          ],
+          'newlines-between': 'always', // 分组间空行
+          alphabetize: { // 字母表排序
+            order: 'asc',
+            caseInsensitive: true
+          }
+        }
+      ],
+
       'n/handle-callback-err': ['error', '^(err|error)$'],
       'n/no-callback-literal': 'error',
       'n/no-deprecated-api': 'error',

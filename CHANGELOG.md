@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.1.0
+
+### Minor Changes
+
+- 9b19328: Add import/order to auto change import order
+
 ## 4.0.9
 
 ### Patch Changes

@@ -52,7 +52,7 @@
     "eslint-plugin-vue": "^9.33.0",
     "globals": "^15.15.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^8.35.1",
+    "typescript-eslint": "^8.36.0",
     "vue-eslint-parser": "^9.4.3"
   },
   "devDependencies": {

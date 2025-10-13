@@ -61,7 +61,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/config-inspector": "^0.7.1",
     "@types/eslint": "^9.6.1",
-    "@types/react": "^18.3.25",
+    "@types/react": "^18.3.26",
     "eslint": "^9.33.0",
     "husky": "^9.1.7",
     "react": "^18.3.1",

@@ -59,7 +59,7 @@
     "@changesets/cli": "^2.29.7",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/config-inspector": "^0.7.1",
+    "@eslint/config-inspector": "^1.4.1",
     "@types/eslint": "^9.6.1",
     "@types/react": "^18.3.26",
     "eslint": "^9.39.1",

@@ -5,6 +5,7 @@ on:
       - master
     paths:
       - '.changeset/**'
+  workflow_dispatch:
 permissions:
   contents: write
   id-token: write

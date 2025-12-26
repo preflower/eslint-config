@@ -1,5 +1,11 @@
 # eslint-config-ted
 
+## 4.1.1
+
+### Patch Changes
+
+- 7e22f72: fix "project" conflict with "projectService" error
+
 ## 4.1.0
 
 ### Minor Changes

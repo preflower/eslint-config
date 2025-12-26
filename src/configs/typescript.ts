@@ -11,7 +11,6 @@ export const typescriptCore = tseslint.config({
   files: [GLOB_TS, GLOB_TSX],
   languageOptions: {
     parserOptions: {
-      project: true,
       projectService: true
     }
   },

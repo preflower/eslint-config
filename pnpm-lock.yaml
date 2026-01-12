@@ -58,7 +58,7 @@ importers:
         specifier: ^9.6.1
         version: 9.6.1
       '@types/react':
-        specifier: ^19.2.7
+        specifier: ^19.2.8
         version: 19.2.8
       eslint:
         specifier: ^9.39.2
@@ -67,7 +67,7 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       react:
-        specifier: ^19.0.3
+        specifier: ^19.2.3
         version: 19.2.3
       tsup:
         specifier: ^8.5.1
